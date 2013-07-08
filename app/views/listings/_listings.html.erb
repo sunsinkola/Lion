@@ -1,0 +1,37 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rent</th>
+      <th>Sqft</th>
+      <th>Beds</th>
+      <th>Baths</th>
+      <th>Address</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% listings.each do |listing| %>
+      <tr>
+        <td><%= listing.name %></td>
+        <td><%= listing.rent %></td>
+        <td><%= listing.sqft %></td>
+        <td><%= listing.beds %></td>
+        <td><%= listing.baths %></td>
+        <td><%= listing.address %></td>
+        <td><%= listing.longitude %></td>
+        <td><%= listing.latitude %></td>
+        <td><%= listing.user_id %></td>
+        <td><%= link_to 'Show', listing %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

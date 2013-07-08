@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyText
+  rent: 1.5
+  sqft: 1.5
+  beds: 1
+  baths: 1
+  address: MyString
+  longitude: 1.5
+  latitude: 1.5
+  user_id: 
+
+two:
+  name: MyText
+  rent: 1.5
+  sqft: 1.5
+  beds: 1
+  baths: 1
+  address: MyString
+  longitude: 1.5
+  latitude: 1.5
+  user_id: 

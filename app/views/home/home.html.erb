@@ -1,0 +1,11 @@
+<h1>Home#home</h1>
+<p>Find me in app/views/home/home.html.erb</p>
+
+<%= render "layouts/hero_unit"%>
+
+<% if @user_listings %>
+<h1>Your Places</h1>
+	<%= render 'listings/listings' , :listings => @user_listings %>
+<% end %>
+
+<%= render :template => 'listings/index', :listings => @listings %>
